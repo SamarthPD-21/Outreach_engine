@@ -1,0 +1,38 @@
+# Your facts, used by every draft and proof-of-work pack.
+# The model may only use what's written here, so keep it accurate and current.
+
+[candidate]
+name = "Samarth Deshpande"
+email = "samarthpd2112@gmail.com"
+resume_path = "Samarth_Deshpande_Resume.pdf"
+links = ["github.com/SamarthPD-21", "samarthpd21.dev"]
+summary = """
+CS student at Scaler School of Technology (B.S. Computer Science with BITS Pilani), Bangalore, Aug 2024 to present.
+Languages: Java, Python, JavaScript, TypeScript, C++.
+Backend: Node.js, Express, Spring Boot, FastAPI, REST, JWT. Frontend: React, Next.js, Tailwind.
+Data: PostgreSQL, MongoDB, Redis, SQLite, Qdrant. AI: PyTorch, LangChain, RAG, Hugging Face.
+Meta PyTorch OpenEnv Hackathon finalist (top 800 teams of 31,000+ participants). CodeChef 1696 (3-star).
+"""
+signature = """
+Best,
+Samarth Deshpande
+github.com/SamarthPD-21
+samarthpd21.dev
+"""
+
+# Keys are referenced by role_proof_points and by proof-of-work ideas ("builds_on").
+[proof_points]
+veblyss = "Sole software engineer (freelance) at VeBlyss Global, Sep–Nov 2025: 20+ production pages, 15+ reusable React components and 25+ production deployments with Next.js, TypeScript and Tailwind; set up hosting, SSL, DNS and release workflows across 5 services; integrated WhatsApp and email enquiry channels."
+typeahead = "Distributed TypeAhead Engine (FastAPI, Redis, SQLite): consistent hashing across Redis nodes, WAL persistence, background sync and low-latency query routing."
+rag = "Research Paper Synthesis Engine (React, Node.js, Express): RAG with BM25 retrieval and section-level citations, a PDF ingestion pipeline and automated research briefs."
+insightlm = "InsightLM (LangChain, Qdrant, Hugging Face): document intelligence with corrective RAG, query rewriting and citation-aware retrieval."
+competitive = "CodeChef 3-star (1696) and Meta PyTorch OpenEnv Hackathon finalist."
+
+# Which proof points each role type leads with, most relevant first.
+[role_proof_points]
+sde = ["typeahead", "veblyss", "competitive"]
+ai = ["rag", "insightlm", "typeahead"]
+ai_sde = ["rag", "typeahead", "veblyss"]
+
+[style]
+banned_phrases = ["dynamic", "keen interest", "take ownership without hand-holding"]

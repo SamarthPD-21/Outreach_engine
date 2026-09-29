@@ -1,0 +1,53 @@
+# --- Secrets -------------------------------------------------------------
+# API keys and the Gmail App Password. Only .env.example is committed.
+.env
+.env.*
+!.env.example
+
+# --- Personal and contact data ------------------------------------------
+# The database holds leads, contacts, drafts, sent emails and replies.
+outreach.db
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# The old scripts' CSV/JSON: recruiter names and addresses. `init` reads it
+# locally; keep a private backup rather than committing it.
+data/legacy/
+
+# Your resume has your phone number and address. Remove this line if the
+# repository is private and you want the PDF tracked.
+*.pdf
+
+# Research packs and experiment lessons are generated from your own outreach.
+packs/
+lessons.md
+
+# --- Python --------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+.python-version
+
+# --- Tests and tooling --------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Editors and OS ------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
